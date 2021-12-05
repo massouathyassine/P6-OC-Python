@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>JustStreamIt</title>
+  </head>
+  <body>
+    <!--navigation-->
+    <nav>
+      <!--logo-->
+      <a href="#" class="logo">
+        <img src="images/logo.png">
+      </a>
+      <!--Menu-->
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#">Catégories</a></li>
+      </ul>
+    </nav>
+      <div class=container>
+            <div id="best-movie">
+              <img src="images/jacket_template.png" alt="jacket best movie">
+              <h2 id="best-title">Titre</h2>
+              <a onclick="showModal()" id="best-button">Voir</a>
+              <p id="best-desc">null</p>
+            </div>
+
+            <div id="sliders">
+              <h3>Top des meilleurs films</h3>
+              <div id="best" class="movies slider">
+                <div class="arrow left" onclick="moveRight('best')">&#8249;</div>
+                <div class="arrow right" onclick="moveLeft('best')">&#8250;</div>
+
+                <div class="slidercontent">
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+
+                </div>
+              </div>
+
+
+              <h3>Films comédie</h3>
+              <div id="comedy" class="movies slider">
+                <div class="arrow left" onclick="moveRight('comedy')">&#8249;</div>
+                <div class="arrow right" onclick="moveLeft('comedy')">&#8250;</div>
+
+                <div class="slidercontent">
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                </div>
+              </div>
+
+              <h3>Films d'horreur</h3>
+              <div id="horror" class="movies slider">
+                <div class="arrow left" onclick="moveRight('horror')">&#8249;</div>
+                <div class="arrow right" onclick="moveLeft('horror')">&#8250;</div>
+
+                <div class="slidercontent">
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                </div>
+              </div>
+
+              <h3>Films de science-fiction</h3>
+              <div id="sci-fi" class="movies slider">
+                <div class="arrow left" onclick="moveRight('sci-fi')">&#8249;</div>
+                <div class="arrow right" onclick="moveLeft('sci-fi')">&#8250;</div>
+
+                <div class="slidercontent">
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="modalBox" class="modal">
+            <div class="modal-box">
+              <span class="close">&times;</span>
+              <div class="modal-body">
+
+                <img id="modal-image" src="images/none.png" alt="">
+                <h2 id="movie-title">null</h2>
+                <p><span id="imdb">null</span> - <span id="date">null</span></p>
+                <p id="desc">null</p>
+
+                <div id="secondary">
+                  <p>Genres: <span class="s-cont">Null</span></p>
+                  <p>Rated: <span class="s-cont">Null</span></p>
+                  <p>Réalisateur: <span class="s-cont">Null</span></p>
+                  <p>Acteurs: <span class="s-cont">Null</span></p>
+                  <p>Origine: <span class="s-cont">Null</span></p>
+                  <p>Box Office: <span class="s-cont">Null</span></p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+
+  <script src="js/script.js"></script>
+  </body>
+
+</html>
