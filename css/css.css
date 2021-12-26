@@ -9,6 +9,106 @@ body {
     margin: 0;
     overflow-y: visible;
 
+
+}
+
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.logo img {
+    height: 50px;
+}
+nav .menu {
+    display: flex;
+}
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin:0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px;
+
+}
+nav .menu li a:hover {
+    background-color: #242424;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(53, 53, 53, 0.1);
+    transition: all ease 0.2s;
+}
+#main{
+    padding-top: 80px;
+    background-color: #f0ad4e;
+}
+.showcase-box{
+    width: 182px;
+    height: 268px;
+    box-shadow:  5px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0px 20px 10px 20px;
+    overflow: hidden;
+}
+.showcase-box img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: top;
+}
+.showcase-heading{
+    padding-left: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    color: #1a1a1a;
+}
+#latest{
+    padding-top: 80px;
+    background-color: #ffffff;
+}
+.latest-box{
+    width: 182px;
+    height: 268px;
+    box-shadow:  5px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0px 20px 10px 20px;
+    overflow: hidden;
+}
+.latest-box img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: top;
+}
+.latest-heading{
+    padding-left: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    color: #1a1a1a;
 }
 
 /* Navigation */
@@ -73,17 +173,69 @@ div.container {
 }
 
 #sliders h3 {
-    font-size: 1.5vw;
+    font-size: 30px;
     margin-bottom: 2px;
 }
 
-div.slider {
+div.slider1 {
     width: 100%;
     overflow: visible;
     transition: 1s;
     text-indent: 0;
     white-space: nowrap;
     position: relative;
+    display: flex;
+      -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+div.slider2 {
+    width: 100%;
+    overflow: visible;
+    transition: 1s;
+    text-indent: 0;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+      -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+    align-items: center;
+    justify-content:space-between;
+
+}
+div.slider3 {
+    width: 100%;
+    overflow: visible;
+    transition: 1s;
+    text-indent: 0;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+      -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+    align-items: center;
+    justify-content:space-between;
+
+}
+div.slider4 {
+    width: 100%;
+    overflow: visible;
+    transition: 1s;
+    text-indent: 0;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+      -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.nwitem {
+    width:100% !important;
 }
 
 h2 {
@@ -101,7 +253,6 @@ div.movie_item {
 
 
 div.movie_item img {
-    width: 100%;
     margin: 5px;
     border-radius: 10px;
     transition: all 200ms ease-in;
@@ -126,7 +277,7 @@ div.movie_item img {
 .arrow:hover {
     color: rgb(255, 255, 255);
     transition: 200ms;
-    background-color: rgba(0, 0, 0, 0.527);
+
 }
 
 .arrow.left {
@@ -321,4 +472,51 @@ div#best-movie {
 
 #loading img{
 margin-top: 18%;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+
+.slide {
+  text-align: center;
+
+}
+
+.slide.active {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.slide.active~.slide {
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #880000;
+}
+
+.button:hover {
+  background-color: #880000;
+  color: white;
 }
