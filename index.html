@@ -2,10 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/css.css" />
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/css.css" />
+    <script src="js/biblio.js"></script>
     <title>JustStreamIt</title>
   </head>
   <body>
@@ -21,84 +19,190 @@
         <li><a href="#">Catégories</a></li>
       </ul>
     </nav>
+      <!-- Sliders -->
       <div class=container>
+
             <div id="best-movie">
-              <img src="images/jacket_template.png" alt="jacket best movie">
+              <img src="images/none.png" >
               <h2 id="best-title">Titre</h2>
               <a onclick="showModal()" id="best-button">Voir</a>
               <p id="best-desc">null</p>
             </div>
 
             <div id="sliders">
+              <!--Best Film -->
               <h3>Top des meilleurs films</h3>
-              <div id="best" class="movies slider">
-                <div class="arrow left" onclick="moveRight('best')">&#8249;</div>
-                <div class="arrow right" onclick="moveLeft('best')">&#8250;</div>
+              <div>
+              <div id="best" class="slider1">
 
-                <div class="slidercontent">
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-
+                <div class="slide">
+                  <div class="movie_item nwitem "><img src="images/none.png"  onclick=""></div>
                 </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem  "><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem  "><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem  "><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item  nwitem "><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem  "><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem  "><img src="images/none.png"  onclick=""></div>
+                </div>
+
               </div>
 
+              <button id="next" class="btn1 button"><< </button>
+              <button id="prev" class="btn1 button"> >></button>
 
+            </div>
+
+
+
+              <!--Film Comedy -->
               <h3>Films comédie</h3>
-              <div id="comedy" class="movies slider">
-                <div class="arrow left" onclick="moveRight('comedy')">&#8249;</div>
-                <div class="arrow right" onclick="moveLeft('comedy')">&#8250;</div>
+              <div class="slider__wrapper">
 
-                <div class="slidercontent">
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+              <div id="comedy" class="slider2">
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
                 </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item  nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+
+
               </div>
 
+              <button id="next" class="btn2 button"><< </button>
+              <button id="prev" class="btn2 button"> >></button>
+
+            </div>
+              <!--Film Horreur -->
               <h3>Films d'horreur</h3>
-              <div id="horror" class="movies slider">
-                <div class="arrow left" onclick="moveRight('horror')">&#8249;</div>
-                <div class="arrow right" onclick="moveLeft('horror')">&#8250;</div>
+              <div>
 
-                <div class="slidercontent">
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+              <div id="horror" class="slider3">
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
                 </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item  nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+
+
               </div>
 
+              <button id="next" class="btn3 button"><< </button>
+              <button id="prev" class="btn3 button"> >></button>
+
+            </div>
+
+              <!--Film Science Fiction -->
               <h3>Films de science-fiction</h3>
-              <div id="sci-fi" class="movies slider">
-                <div class="arrow left" onclick="moveRight('sci-fi')">&#8249;</div>
-                <div class="arrow right" onclick="moveLeft('sci-fi')">&#8250;</div>
+              <div >
 
-                <div class="slidercontent">
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
-                  <div class="movie_item"><img src="images/none.png" alt="movie jacket" onclick=""></div>
+              <div id="sci-fi" class="slider4">
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
                 </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item  nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+                <div class="slide">
+                  <div class="movie_item nwitem"><img src="images/none.png"  onclick=""></div>
+                </div>
+
+
+
               </div>
 
+              <button id="next" class="btn4 button"><< </button>
+              <button id="prev" class="btn4 button"> >></button>
+
+            </div>
             </div>
           </div>
 
+          <!--Modal Box-->
           <div id="modalBox" class="modal">
             <div class="modal-box">
               <span class="close">&times;</span>
@@ -122,9 +226,6 @@
 
             </div>
           </div>
-
-
-
 
   <script src="js/script.js"></script>
   </body>
